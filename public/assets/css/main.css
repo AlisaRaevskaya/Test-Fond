@@ -1,10 +1,9 @@
 @import url("style.css");
 body {
-  font-family: "Open Sans";
-  font-size: 13px;
+  font-family: "Open Sans" !important;
+  font-size: 13.5px;
   line-height: 21px;
 }
-
 .main_container {
   background-color: #fff;
 }
@@ -33,6 +32,12 @@ body {
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+.hidden{
+  display: none;
+}
+.transparent{
+  background-color: transparent;
+}
 .faq_form_box_item {
   display: flex;
   justify-content: space-around;
@@ -51,7 +56,6 @@ body {
 .header_phone {
   font-weight: 900;
   font-size: 17px;
-  text-decoration: underline;
 }
 .contacts_social a {
   padding: 0 10px;
@@ -145,7 +149,15 @@ justify-content:space-around;
 .history_link {
   padding-left: 10%;
 }
-
+.news_single{
+    max-width:330px !important;
+    border-radius:8px !important;
+    float:left !important;
+    margin: 5px 10px 5px 0px;
+}
+.news_entity_img{
+max-width:370px;
+}
 .ul_padding {
   padding-left: 2em;
 }
@@ -435,6 +447,9 @@ margin-top:1.7rem;
 .ml5{
     margin-left:5px;
 }
+.mt10{
+    margin-top:10px;
+}
 .previous {
   background-color: #f1f1f1;
 }
@@ -458,6 +473,10 @@ a.previous:hover {
   font-weight: bold;
   color: #0000cc;
   text-decoration: underline;
+}
+.phone_color {
+  font-weight: bold;
+  color: #0000cc;
 }
 .pop_map_link {
   font-size: 12px;
@@ -507,9 +526,8 @@ a.previous:hover {
 .f-size10{
      font-size:10px;
 }
-.requisites p,
-.contacts p{
-font-size:17px;
+.fw-bold{
+    font-weight:bold;
 }
 .underline {
   text-decoration: underline;

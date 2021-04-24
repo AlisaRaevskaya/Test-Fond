@@ -1,11 +1,12 @@
 $("#lawyer-btn").on("click", function(event) {
     event.preventDefault();
 
-    let data = $('form[name="lawyerForm"]').serialize();
-
     let checkbox = $("input[type='checkbox']");
     checkbox.is(":checked") ? checkbox.val(1) : checkbox.val(0);
 
+    let data = $('form[name="lawyerForm"]').serialize();
+
+    
     $.ajaxSetup({
         headers: {
             "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content")
@@ -23,6 +24,7 @@ $("#lawyer-btn").on("click", function(event) {
           $('form[name="lawyerForm"]').trigger("reset");
            $('#law-success').html('');
            $(".text-danger").html('');
+           $('#reload').trigger("click");
         }, 2000);
       }else{
         $('#reload').trigger("click");

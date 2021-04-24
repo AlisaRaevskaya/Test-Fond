@@ -1,4 +1,4 @@
-     <form action="/lawyer-form" method="POST" name="lawyerForm">
+     <form action="{{ route('lawyer-question') }}" method="POST" name="lawyerForm">
          @csrf
          <div class="col-md-6 justify-content-center f-size15">
              <div style="margin-top:5%;">
@@ -47,7 +47,7 @@
 
              <div class="form-group">
                  <div class="row">
-                     <input required checked type="checkbox" id="rules_ok" class="check-box" name="consent">
+                     <input required checked type="checkbox" id="rules_ok" class="check-box_law" name="consent">
                      <span>Я подтверждаю, что ознакомлен(-а) с
                          <a href="/storage/app/public/pdf/politika_confidence.pdf" target="_blank" class="consent"><span
                                  class="underline">

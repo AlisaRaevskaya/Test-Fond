@@ -23,15 +23,6 @@ Author: uiCookies.com
 
 
 
-    font-family: 'PT Serif', serif;
-
-    font-family: 'Bangers', cursive;
-
-    font-family: 'Vidaloka', serif;
-
-    font-family: 'Limelight', cursive;
-
-
 
 # [Color codes]
 
@@ -41,19 +32,6 @@ Author: uiCookies.com
 # Mid grey (sub header) #666666
 # -------------------------------------------------------------------*/
 
-/* body {
-    background-image: url(/../storage/flag.jpg)!important;
-    background-attachment:fixed !important;
-    background-repeat: no-repeat;
-    background-position: top;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover !important;
-    font-family: 'Open Sans';
-    font-size: 13px;
-    line-height: 21px;
-} */
 
 
 /* --------------------------------------
@@ -338,7 +316,7 @@ section {
 }
 .summernote,
 .summernote_news{
-font-family:'Open Sans';
+font-family:'Open Sans'!important;
 }
 
 @media screen and (max-width: 768px) {

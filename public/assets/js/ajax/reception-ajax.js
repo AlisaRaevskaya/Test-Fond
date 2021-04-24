@@ -35,6 +35,7 @@ $("#btn-messages").on("click", function(event) {
                     form.trigger("reset");
                      $("#success_messages").html('');
                      $(".text-danger").html('');
+                     $('#reload').trigger("click");
                 }, 3000);
             } else{
             $('#reload').trigger("click");
